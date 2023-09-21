@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tech Intern Registration</title>
+<style>
+    body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+    background-color: black;
+    color:white;
+    line-height: 3;
+}
+
+form {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  float: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: right;
+    margin-bottom: 5px;
+}
+
+.submit {
+  background-color:red;
+  color:white;
+  cursor: pointer;
+}
+    .gender{
+        float:left;
+        vertical-align: middle;
+    }
+    
+.gender input[type="radio"], .gender label {
+  float: none;
+  display:flex;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.gender {
+  display: flex;
+  justify-content: flex-start;
+}
+</style>
+</head>
+<body>
+<h1>Event Registration Form</h1>
+<div class="container">
+<form action="submit.php" method="post">
+<div class="form-group">
+<label for="name">Full Name</label>
+<input type="text" name="name" id="name" class="form-control" placeholder="Full Name" style="float: left;">
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" style="float: left;">
+</div>
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input type="number" name="phone" id="phone"  placeholder="Phone Number" style="float: left;">
+</div>
+<div class="form-group">
+<label for="college">College Name</label>
+<input type="text" name="college" id="college" class="form-control" placeholder="College Name" style="float: left;">
+</div>
+<div class="form-group">
+<label for="current_course">Current Course</label>
+<input type="text" name="current_course" id="current_course" class="form-control" placeholder="Current Course" style="float: left;">
+</div>
+<div class="gender">
+<label for="gender">Gender</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+</div>
+<div class="submit">
+<input type="submit" value="Submit" class="submit">
+</div>
+</form>
+</div>
+</body>
+</html>
